@@ -1,0 +1,217 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <title>Portofolio</title>
+    <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+   />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <style>
+       * {
+        margin: 0;
+        padding: 0;
+      }
+      
+    #about {
+      background-color:#eaeaea;
+    }
+    
+    #Album {
+      background-color: #eaeaea;
+    }
+    
+    #topselection {
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      background-image: url(../Bg2.jpg);
+      background-position: Center;
+      background-repeat: no-repeat;
+      }
+      
+      #topselection > div {
+       width: 100%;
+        text-align: center;
+      }
+      
+      #topselection > div {
+        font-size: 10px;
+        font-family h1: Arial;
+      }
+      #topselection > div > h1, #topselection > div > p {
+        color: white;
+      }
+      
+      #about {
+        padding: 30px 18px;
+      }
+      
+      #about > h3 {
+        margin-bottom: 8px;
+      }
+      
+      #about > img {
+        width: 300px;
+        height: 13rem;
+        margin-top: 18px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-left:30px;
+        
+      }
+      
+      #Album {
+        padding: 30px 18px;
+      }
+      #Album > .swiper {
+        width: 100%;
+        height: 300px;
+      }
+      
+      .swiper-img {
+        width: 300px;
+        height: 70%;
+        object-fit: cover;
+        margin-bottom: 40px;
+        margin-block: 30px;
+        margin-left: 25px;
+        border-radius: 10px;
+      }
+      
+      .swiperimg {
+        width: 300px;
+        height: 70%;
+        margin-bottom: 40px;
+        margin-block: 30px;
+        margin-left: 25px;
+        border-radius: 10px;
+      }
+      
+      .judulalbum {
+        margin-bottom: 5px;
+        margin-left: 38%;
+      }
+      
+      #contact {
+        padding-top: 10px;
+        display: inline-block;
+        background-color: #eaeaea;
+        margin-top: 10px;
+        padding-left: 140px;
+        border-radius: 100px;
+        margin-left: 40;
+        margin-right: 40;
+      }
+      
+      #contact > a > img {
+        width: 12%;
+        height: 12%;
+        padding: 0px;
+      }
+      
+      #contact > a > p {
+        display: ;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <selection id="topselection">
+        <div>
+          <h1>Sella Nur Septiany</h1>
+          <p>Business Management</p>
+        </div>
+      </selection>
+    <div>
+      <section id="about">
+        <h3>About me</h3>
+        <p>Hi, my name is Sella, I am a student at Widiyatama University, I am majoring in Business Management and maybe in the future I will become CEO of a company.</p>
+        
+        <img src="Sella.png" alt="">
+      </section>
+     <div>
+       <section id="data">
+         <h3>My data base</h3>
+         <p></p>
+       </section>
+     </div>
+    </div>
+    <section  id="Album">
+      <h3 class="judulalbum">My Album.</h3>
+      <div class="swiper">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+    <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="Img15.jpg" alt="" class="swiper-img">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img16.jpg" alt="" class="swiperimg">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img5.jpg" alt="" class="swiper-img">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img4.jpg" alt="" class="swiper-img">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img7.jpg" alt="" class="swiper-img">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img8.jpg" alt="" class="swiper-img">
+      </div>
+      <div class="swiper-slide">
+        <img src="Img13.jpg" alt="" class="swiper-img">
+      </div>
+    ...
+    </div>
+    <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+     <div class="swiper-button-prev"></div>
+     <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+     <div class="swiper-scrollbar"></div>
+  </div>
+    </section>
+    </main>
+    <script>
+      const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+    
+    <section id="contact">
+      <a href="https://www.instagram.com/sellaanurs">
+        <img src="ig.png" alt=""></a>
+      <a href="https://www.instagram.com/seellaan"><img src="ig.png"></a>
+      <a href="https://www.tiktok.com/@collinssella">
+        <img src="tiktok.png"></a>
+    </section>
+  </body>
+</html>
